@@ -25,12 +25,12 @@ public class AboutActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_about);
         setSupportActionBar(binding.toolbar);
         {
-            binding.title.setText("EasyPlayer RTSP播放器：");
-            binding.desc.setText("EasyScreenLive是一款简单、高效、稳定的集采集，编码，" +
-                    "推流和流媒体RTSP服务于一身的通用库，具低延时，高效能，低丢包等特点。" +
-                    "目前支持Windows，Android平台，通过EasyScreenLive我们就可以避免接触到稍显复杂的音视频源采集，" +
-                    "编码和流媒体推送以及RTSP/RTP/RTCP服务流程，只需要调用EasyScreenLive的几个API接口，就能轻松、" +
-                    "稳定地把流媒体音视频数据推送给EasyDSS服务器以及发布RTSP服务，RTSP服务支持组播和单播两种模式。项目地址：");
+            binding.title.setText("EasyPlayer RTSP-плеер：");
+            binding.desc.setText("EasyScreenLive — это простая, эффективная и стабильная коллекция, кодирование," +
+                    "Библиотека общего назначения, объединяющая службы потоковой передачи и потоковой передачи RTSP, отличающаяся низкой задержкой, высокой производительностью и низкой потерей пакетов." +
+                    "В настоящее время поддерживает платформы Windows, Android, с помощью EasyScreenLive мы можем избежать доступа к несколько сложной коллекции аудио- и видеоисточников," +
+                    "Кодирование и потоковая передача мультимедиа и процесс обслуживания RTSP / RTP / RTCP, нужно всего лишь вызвать несколько API-интерфейсов EasyScreenLive, вы можете легко," +
+                    "Стабильная передача потоковых аудио- и видеоданных на сервер EasyDSS и публикация службы RTSP. Служба RTSP поддерживает два режима многоадресной и одноадресной рассылки. адрес проекта:");
 
             binding.desc.setMovementMethod(LinkMovementMethod.getInstance());
             SpannableString spannableString = new SpannableString("https://github.com/EasyDSS/easyscreenlive");

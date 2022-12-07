@@ -132,7 +132,7 @@ public class PlayListAdapter extends BaseAdapter implements View.OnClickListener
                 intent.putExtra("PUSH_TYPE", info.getPushType());
                 context.startActivity(intent);
             } else {
-                Toast.makeText(context, "设备未进行屏幕推送",
+                Toast.makeText(context, "Устройство не выполняет нажатие на экран",
                         Toast.LENGTH_SHORT).show();
             }
         }
@@ -149,12 +149,12 @@ public class PlayListAdapter extends BaseAdapter implements View.OnClickListener
             return true;
         }
 
-        new AlertDialog.Builder(context).setMessage("确定要删除该地址吗？").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+        new AlertDialog.Builder(context).setMessage("Вы уверены, что хотите удалить этот адрес?？").setPositiveButton("Конечно", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 delChanneData(position);
             }
-        }).setNegativeButton("取消", null).show();
+        }).setNegativeButton("Отмена", null).show();
 
         return true;
     }

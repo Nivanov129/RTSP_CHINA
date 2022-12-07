@@ -74,10 +74,10 @@ public class OnLiveInfo {
         this.cmd = cmd;
         switch (cmd) {
             case INFO_CMD_ONLIVE:
-                msg = "设备在线";
+                msg = "устройство онлайн";
                 break;
             case INFO_CMD_SHARED_SCREEN:
-                msg = "设备共享屏幕";
+                msg = "Экран совместного доступа к устройству";
                 break;
             default:
                 break;

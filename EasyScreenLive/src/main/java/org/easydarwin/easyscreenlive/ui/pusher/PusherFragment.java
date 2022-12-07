@@ -54,7 +54,7 @@ public class PusherFragment extends BaseFragment implements PusherContract.View,
         mSurfaceView.getHolder().addCallback(this);
 
         if (mResultIntent== null && mResultCode == 0) {
-            textViewStatus.setText("申请权限");
+            textViewStatus.setText("запрос на доступ");
         }
 
         if (presenter != null) {
@@ -75,8 +75,8 @@ public class PusherFragment extends BaseFragment implements PusherContract.View,
     public void onPushScreen() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP){
             new AlertDialog.Builder(getActivity()).
-                    setMessage("推送屏幕需要安卓5.0以上,您当前系统版本过低,不支持该功能。").
-                    setTitle("抱歉").show();
+                    setMessage("Для работы push-экрана требуется Android 5.0 или более поздняя версия, а текущая версия системы слишком низкая для поддержки этой функции.").
+                    setTitle("Извините").show();
             return;
         }
         if (presenter != null) {
@@ -97,10 +97,10 @@ public class PusherFragment extends BaseFragment implements PusherContract.View,
     * 若只需一个按钮，仅设置 setPositiveButton 即可
     */
     private void showMultiBtnDialog(){
-        final String[] items = { "横屏推送", "竖屏推送","前置摄像头","后置摄像头"};
+        final String[] items = { "Горизонтальный толчок", "Вертикальный толчок","Передняя камера","задняя камера"};
         AlertDialog.Builder listDialog =
                 new AlertDialog.Builder(getActivity());
-        listDialog.setTitle("选择推送内容");
+        listDialog.setTitle("Выберите push-контент");
         listDialog.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -88,7 +88,7 @@ public class ScreenLiveActivity extends BaseActivity {
                             == EasyScreenLiveAPI.EASY_PUSH_SERVICE_STATUS.STATUS_PUSH_CAMREA_BACK
                         || EasyScreenLiveAPI.getPushStatus()
                             == EasyScreenLiveAPI.EASY_PUSH_SERVICE_STATUS.STATUS_PUSH_CAMREA_FRONT) {
-                        showToast("请先停止摄像头推流");
+                        showToast("Сначала остановите потоковую передачу с камеры.");
                     } else {
                         getFragmentManager().beginTransaction().replace(R.id.fragmeng_main_layout, playListFragment).commit();
                         mBinding.fragmengPush.setTextColor(getResources().getColor(R.color.colorText));

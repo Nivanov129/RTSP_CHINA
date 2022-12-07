@@ -22,17 +22,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="同屏方式  ：" />
+                android:text="тот же режим экрана  ：" />
             <RadioButton
                 android:id="@+id/button_multicast_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="组播"/>
+                android:text="много "/>
             <RadioButton
                 android:id="@+id/button_unicast_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="单播"/>
+                android:text="Одно"/>
         </RadioGroup>
         <LinearLayout
             android:id="@+id/rtsp_id"
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RTSP 端口：" />
+                android:text="RTSP порт：" />
             <EditText
                 android:id="@+id/edit_rtsp_port"
                 android:layout_width="wrap_content"

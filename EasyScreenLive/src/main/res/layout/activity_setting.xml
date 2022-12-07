@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="组播端口   ：" />
+                android:text="многоадресный порт   ：" />
             <EditText
                 android:id="@+id/edit_multicast_port"
                 android:inputType="number"
@@ -103,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="组播丢包重传：" />
+                android:text="Многоадресная повторная передача потерянных пакетов：" />
             <Switch
                 android:id="@+id/switch_enable_arq"
                 android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="组播智能纠错：" />
+                android:text="Многоадресная интеллектуальная коррекция ошибок：" />
             <Switch
                 android:id="@+id/switch_enable_fec"
                 android:layout_width="wrap_content"
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="纠错组大小（10-30）：" />
+                android:text="размер группы исправления ошибок（10-30）：" />
             <EditText
                 android:id="@+id/edit_fec_groud_size"
                 android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="纠错参数（冗余度，10-100）：" />
+                android:text="Параметры коррекции ошибок (избыточность, 10-100）：" />
             <EditText
                 android:id="@+id/edit_fec_param"
                 android:layout_width="wrap_content"
@@ -182,7 +182,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="固定帧率 (0表示不控制帧率):" />
+                android:text="Фиксированная частота кадров (0 означает отсутствие управления частотой кадров):" />
             <EditText
                 android:id="@+id/switch_enable_frame"
                 android:layout_width="wrap_content"
@@ -201,7 +201,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="声音推流" />
+                android:text="Потоковая передача звука" />
             <Switch
                 android:id="@+id/switch_enable_audio"
                 android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="码流(512kb-8192kb) ：" />
+                android:text="Кодовый поток (512–8192 КБ) ：" />
             <EditText
                 android:id="@+id/edit_bit_rate"
                 android:inputType="number"
@@ -241,6 +241,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="保存设置" />
+        android:text="Сохранить настройки" />
 </LinearLayout>
 </layout>
